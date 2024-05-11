@@ -16,6 +16,10 @@ a:hover {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header-text {
   font-family: "josefin-slab", serif;
   font-weight: 400;
@@ -30,8 +34,8 @@ a:hover {
 }
 
 .body-text {
-  font-family: "josefin-slab", serif;
-  font-weight: 400;
+  font-family: "josefin-sans", sans-serif;
+  font-weight: 300;
   font-style: normal;
   font-size: 20px;
 }
@@ -51,6 +55,8 @@ a:hover {
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nav-bar-links {
@@ -103,18 +109,17 @@ a:hover {
   margin-bottom: 60px;
 }
 
-.projects {
+#projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
 
 .project-image {
-  background-color: rgb(153, 208, 232);
-  width: 400px;
+  width: 450px;
   height: 300px;
   border: 1px solid black;
-  filter: drop-shadow(5px 5px #ff8877);
+  filter: drop-shadow(8px 8px #ff8877);
   transition: all 0.2s ease-in-out;
 }
 
@@ -125,7 +130,7 @@ a:hover {
 .project {
   width: 400px;
   height: auto;
-  margin: 20px;
+  margin-bottom: 80px;
   color: black;
 }
 
@@ -148,11 +153,40 @@ a:hover {
 }
 
 .project-content {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  margin-top: 50px;
 }
 
 .image {
   width: 600px;
   height: auto;
+}
+
+li::marker {
+  color: #ff8877;
+}
+
+.two-column {
+  display: flex;
+}
+
+.small-image {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 25px;
+}
+
+.contact-icons {
+  display: flex;
+  float: right;
+  margin-bottom: 30px;
+}
+
+.icon {
+  color: #ff8877;
+  font-size: 3vw;
+  margin-left: 10px;
+  margin-right: 10px;
 }

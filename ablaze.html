@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joyce's Portfolio</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="https://use.typekit.net/vug5tzg.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <a class="nav-text nav-logo" href="index.html">Joyce Li</a>
+      <div class="nav-bar-links">
+        <!-- fix so that work goes down to projects-->
+        <a class="nav-item nav-text" href="index.html#projects">work</a>
+        <a class="nav-item nav-text" href="play.html">play</a>
+        <a class="nav-item nav-text" href="about.html">about</a>
+      </div>
+    </div>
+
+    <main class="project-main">
+      <section class="project-title">
+        <div>
+          <h1 class="header-text">Ablaze</h1>
+        </div>
+        <div class="project-intro">
+          <p class="body-text">
+            a web app for finding local Asian-owned businesses and Asian
+            American Pacific Islander artists
+          </p>
+
+          <div class="project-intro-facts">
+            <div>
+              <p class="body-text colored-text">role</p>
+              <p class="body-text">Frontend Developer</p>
+            </div>
+            <div>
+              <p class="body-text colored-text">timeline</p>
+              <p class="body-text">2023</p>
+            </div>
+            <div>
+              <p class="body-text colored-text">team</p>
+              <p class="body-text">Lisa Liong - backend</p>
+              <p class="body-text">Karis Ma - backend</p>
+              <p class="body-text">Kelly Wei - frontend</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-content">
+        <h1 class="subheader-text colored-text">---the problem---</h1>
+        <p class="body-text">
+          With the pandemic, the United States saw a surge in anti-Asian
+          sentiment and the lockdown’s disproportionate effect on Asian-American
+          Pacific Islander (AAPI) owned businesses. Now, a few years later, AAPI
+          individuals and businesses are still feeling the financial and
+          emotional impacts.
+        </p>
+        <p class="body-text">
+          Working with a team of three other students, we wanted to support our
+          AAPI community and bring attention to the many talented business
+          owners and creators out there. In addition to being a site for users
+          to find local AAPI businesses, we want our web app to be a resource
+          and platform where business owners and creators can share their work.
+        </p>
+        <p class="body-text">
+          For this first prototype, we focused on the Boston area due to the
+          data available and used mock data where needed.
+        </p>
+      </section>
+
+      <section class="project-content">
+        <h1 class="subheader-text colored-text">---user stories---</h1>
+        <p class="body-text">
+          Based off of interviews we conducted with artists, creators, business
+          owners, and consumers, we created a set of user stories to guide our
+          implementation and to ensure our design would actually be useful to
+          users.
+        </p>
+
+        <!--turn into cards?-->
+        <ul class="body-text">
+          <li>
+            <span class="colored-text">A Musician:</span>
+            <br />
+            As a musician hoping to break out into mainstream music, I want to
+            easily promote myself on a platform where others can hear my music
+            on various streaming platforms such as Apple Music or Spotify. I
+            also want people to connect with me through my social media profiles
+            and business email.
+          </li>
+          <li>
+            <span class="colored-text">An Author:</span>
+            <br />
+            As an aspiring author, I want to easily share my words with others
+            who resonate with my AAPI experience or would like to learn more
+            about my history. I want to be able to connect with readers and make
+            sure they have access to my website and social media.
+          </li>
+          <li>
+            <span class="colored-text">A Family-Owned Chinese Restaurant:</span>
+            <br />
+            As a small business owner, I want to promote my business. I am
+            worried about not being able to understand the platform and would
+            like instructions on how I can gain more traction. I want to be able
+            to showcase the menu we have and photos of the delicious food we
+            offer.
+          </li>
+
+          <li>
+            <span class="colored-text">A College Student:</span>
+            <br />
+            As an Asian-American college student in Boston, I want to search for
+            Asian-owned businesses in my area. I miss food from home, and it
+            would be comforting to be able to find and filter places for Asian
+            restaurants, grocery stores, bakeries, and other types of
+            businesses.
+          </li>
+        </ul>
+      </section>
+
+      <section class="project-content">
+        <h1 class="subheader-text colored-text">---implementation---</h1>
+        <p class="body-text">
+          As one of two front-end developers on this project, I handled the
+          pages for AAPI creators and artists. For this prototype, I created a
+          page where users could search and filter for AAPI musicians, connected
+          to the Spotify API.
+        </p>
+        <p class="body-text">
+          process shot of page for searching for Spotify artists:
+        </p>
+        <img
+          class="image"
+          alt="spotify page"
+          src="./assets/ablaze/spotify.png"
+        />
+        <p class="body-text">
+          I also created a separate page where users can search for additional
+          types of artists and creators, which is intended to be a place for
+          creators to submit themselves to be displayed on the site. I mocked
+          the data for this version of the web app.
+        </p>
+        <p class="body-text">process shot of page with creators displayed:</p>
+        <img
+          class="image"
+          alt="spotify page"
+          src="./assets/ablaze/creators.png"
+        />
+      </section>
+
+      <section class="project-content">
+        <h1 class="subheader-text colored-text">---takeaways---</h1>
+        <p class="body-text">
+          This was my first time working with a team to develop a web app, and I
+          learned how important it is to communicate. I learned to communicate
+          effectively with backend developers in order to successfully integrate
+          all of the parts of the project. I also got a lot of practice mocking
+          data for the cases where I was unable to connect to the backend.
+        </p>
+        <p class="body-text">
+          In addition, I learned to start early! Some features didn't work out
+          as intended, and we modified our design as we went. Starting early
+          gave us the room to adapt to challenges.
+        </p>
+        <p class="body-text">
+          It was also my first time working extensively with React and HTML/CSS,
+          and I really enjoyed it!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
