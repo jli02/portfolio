@@ -137,10 +137,17 @@ html {
 .project-title {
   display: flex;
   justify-content: center;
+  width: 80vw;
+  margin-left: 5vw;
+  margin-right: 10vw;
+  margin-top: 50px;
+  border: dotted #ff8877 2px;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 .project-intro {
-  margin-left: 200px;
+  margin-left: 150px;
 }
 
 .project-main {
@@ -163,6 +170,16 @@ html {
   height: auto;
 }
 
+.medium-image {
+  width: 400px;
+  height: auto;
+}
+
+.small-image {
+  width: 200px;
+  height: auto;
+}
+
 li::marker {
   color: #ff8877;
 }
@@ -171,7 +188,7 @@ li::marker {
   display: flex;
 }
 
-.small-image {
+.round-image {
   width: 200px;
   height: auto;
   border-radius: 50%;
