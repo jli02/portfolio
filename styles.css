@@ -142,6 +142,7 @@ html {
   border: dotted #ff8877 2px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: auto;
 }
 
 .project-intro {
@@ -164,18 +165,20 @@ html {
 }
 
 .image {
-  width: 600px;
+  width: 50vw;
   height: auto;
 }
 
 .medium-image {
-  width: 400px;
+  width: 25vw;
   height: auto;
+  margin: 10px;
 }
 
 .small-image {
-  width: 200px;
+  width: 15vw;
   height: auto;
+  margin: 10px;
 }
 
 li::marker {
@@ -230,10 +233,31 @@ li::marker {
   margin-left: 60px;
 }
 
+.image-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1050px) {
   .project {
     scale: 0.9;
     margin-bottom: 40px;
+  }
+
+  .art-grid {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .project-content {
+    padding-left: 8vw;
+    padding-right: 8vw;
   }
 }
 
@@ -257,11 +281,20 @@ li::marker {
 
   .project-title {
     flex-direction: column;
-    margin: auto;
   }
 
   .project-intro {
     margin-left: 0px;
+  }
+
+  .medium-image {
+    width: 300px;
+    height: auto;
+  }
+
+  .small-image {
+    width: 200px;
+    height: auto;
   }
 }
 
@@ -287,6 +320,24 @@ li::marker {
   .intro {
     padding: 80px;
     margin-bottom: 10px;
+  }
+
+  .project-main {
+    padding: 10px;
+  }
+
+  .project-title {
+    width: 60vw;
+    margin-top: 80px;
+  }
+
+  video {
+    width: 400px;
+  }
+
+  .image {
+    width: 400px;
+    height: auto;
   }
 }
 
@@ -331,6 +382,20 @@ li::marker {
     margin-left: 10px;
     scale: 0.8;
   }
+
+  .image {
+    width: 300px;
+    height: auto;
+  }
+
+  .art-grid {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .two-column {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -347,5 +412,9 @@ li::marker {
   .nav-bar {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  video {
+    width: 300px;
   }
 }
